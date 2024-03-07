@@ -1,4 +1,4 @@
-package week2.boj02;
+package week2.BOJ1213;
 
 public class bojTest2 {
 
