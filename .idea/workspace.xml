@@ -1,45 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df4d5b6-607c-4476-aeaa-9233f592fdb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj01/Test text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ18111/Test text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj01/bojTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ18111/bojTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj02/bojTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ1213/bojTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj03/bojTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ30892/bojTest3.java" afterDir="false" />
+    <list default="true" id="c8c987e8-c67e-43ee-a580-a9f2971c62b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/BOJ1213/BOJ_1213_김수아.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/BOJ18111/BOJ_18111_김수아.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/BOJ30892/BOJ_30892_김수아.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
+  "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="2dMPJ81GQ3HhnBhfT5ya49L1rlq" />
+  <component name="ProjectId" id="2dMVO9kOykFJqPunBHQWsUsPtoT" />
   <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "preferences.general"
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="week2.BOJ18111" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8df4d5b6-607c-4476-aeaa-9233f592fdb1" name="Changes" comment="" />
-      <created>1709814905095</created>
+      <changelist id="c8c987e8-c67e-43ee-a580-a9f2971c62b1" name="Changes" comment="" />
+      <created>1709817909448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709814905095</updated>
+      <updated>1709817909448</updated>
     </task>
     <servers />
   </component>
