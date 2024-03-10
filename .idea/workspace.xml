@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8df4d5b6-607c-4476-aeaa-9233f592fdb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj01/Test text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ18111/Test text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj01/bojTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ18111/bojTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj02/bojTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ1213/bojTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week2/boj03/bojTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ30892/bojTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/BOJ1213/bojTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ1213/BOJ1213이상휘.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/BOJ18111/Test text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week2/BOJ18111/bojTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/BOJ18111/BOJ18111이상휘.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
