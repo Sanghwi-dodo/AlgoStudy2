@@ -1,0 +1,125 @@
+package week2.BOJ14503_STUDY.BOJ14053_로봇_청소기
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+
+		// 북 동 남 서
+
+		int[] dr = { -1, 0, 1, 0 };
+		int[] dc = { 0, 1, 0, -1 };
+
+		int N = Integer.parseInt(st.nextToken());
+		int M = Integer.parseInt(st.nextToken());
+
+		int[][] map = new int[N][M];
+
+		st = new StringTokenizer(br.readLine());
+
+		int rr = Integer.parseInt(st.nextToken());
+		int rc = Integer.parseInt(st.nextToken());
+
+		// 0 == North , 1 == East , 2 == South , 3 == West
+		int d = Integer.parseInt(st.nextToken());
+
+		// 맵 채우기
+		for (int r = 0; r < N; r++) {
+			st = new StringTokenizer(br.readLine());
+			for (int c = 0; c < M; c++) {
+				map[r][c] = Integer.parseInt(st.nextToken());
+			}
+		}
+
+		// 결과값 저장할 변수
+		int result = 0;
+
+		// 반복문 돌릴 boolean 변수
+		boolean move = true;
+
+		// 맵 탐색 시작
+		while (move) {
+			// 현위치가 청소 안된 자리면 자리값을 2로 바꾸고 result++
+			if (map[rr][rc] == 0) {
+				map[rr][rc] = 2;
+				result++;
+			}
+
+			boolean clean = false;
+
+			// 4방탐색 하면서 청소안된 자리가 있는지 확인
+			for (int i = 0; i < 4; i++) {
+				int nr = rr + dr[i];
+				int nc = rc + dc[i];
+
+				// 안된 자리가 하나라도 있다면 true
+				// 배열의 인덱스 범위 벗어나지 않게 조건문 작성
+
+				if (0 <= nr && nr < N && 0 <= nc && nc < M) {
+					// 청소안된 자리 있다면 true
+					if (map[nr][nc] == 0)
+						clean = true;
+				}
+			}
+
+			// true일때 (청소 안된 자리가 있을때)
+
+			if (clean) {
+
+				// 바라보는 방향에 따라 로봇 청소기의 방향 반시계 90도 돌리기
+				if (d == 0) {
+					d = 3;
+				} else {
+					d -= 1;
+				}
+				
+				// 그 방향으로 현재 로봇청소기 좌표 nr nc 변경
+				int nr = rr + dr[d];
+				int nc = rc + dc[d];
+
+				// 다시 인덱스 벗어나지 않게 조건문 작성하고 그 자리가 청소 안된 자리라면
+				// 좌표 갱신
+				if (0 <= nr && nr < N && 0 <= nc && nc < M) {
+
+					if (map[nr][nc] == 0) {
+						rr = nr;
+						rc = nc;
+					}
+				}
+				
+			} else {
+
+				// 로봇 머리 방향 반대로 돌려줌
+				int turn = 100;
+
+				if (d < 2)
+					turn = d + 2;
+				else
+					turn = d % 2;
+
+				// 후진 하는데 벽 아니면 이동하고
+				// 벽이면 청소 종료
+
+				int nr = rr + dr[turn];
+				int nc = rc + dc[turn];
+
+				if (0 <= nr && nr < N && 0 <= nc && nc < M) {
+
+					if (map[nr][nc] != 1) {
+						rr = nr;
+						rc = nc;
+						
+					} else {
+						move = false;
+					}
+				}
+			}
+		}
+		System.out.println(result);
+	}
+}

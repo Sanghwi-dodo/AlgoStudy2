@@ -1,0 +1,49 @@
+package week2.BOJ1874
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Stack;
+
+public class BOJ1874 {
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder(); // 출력할 결과물 저장
+
+		Stack<Integer> stack = new Stack<>();
+
+		int N = Integer.parseInt(br.readLine());
+
+		int start = 0;
+
+		while (N-- > 0) {
+
+			int num = Integer.parseInt(br.readLine());
+
+			// 입력받은 num이 start보다 크면
+			if (num > start) {
+
+				// 스택에 num까지 push 함
+				for (int i = start + 1; i <= num; i++) {
+					stack.push(i);
+					sb.append("+" + "\n");
+				}
+				// 어디까지 넣었는지 확인하기 위해 start를 num과 통일시켜줌
+				start = num;
+			}
+
+			// 입력받은 num이랑 stack의 top이랑 다르면 순열을 맞출수 없음
+			if (stack.peek() != num) {
+				System.out.println("NO");
+				return;
+			}
+
+			else {
+				stack.pop();
+				sb.append("-" + "\n");
+			}
+		}
+		System.out.println(sb);
+	}
+}
